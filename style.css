@@ -1,0 +1,219 @@
+header{
+    background-color: #f5f5dc7d;
+    width: auto;
+    max-height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header h1{
+    font-size: 40px;
+}
+header h2{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    background-image: url(doctor-with-blank-board.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    height: 615px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.title h2{
+    font-weight: normal;
+    max-width: 100%;
+}
+.container button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+main button{
+    background-color: #0659b8;
+    border-radius: 30px;
+    border: 0px;
+    width: 150px;
+    height: 50px;
+    
+}
+.title{
+    max-width: 45%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.title h1{
+    font-size: 45px;
+    color: #0659b8;
+    max-width: 55%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.ligue{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+.ligue h2{
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 50%;
+    margin: 0%;
+}
+.primary{
+    background-color: #0659b8;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    text-align: center;
+    min-height: 725px;
+}
+.primary h1{
+    color: #97f8fb;
+}
+.primary h2{
+    color: white;
+    font-weight: bold;
+    font-family: math;
+}
+.navigation{
+    display:flex;
+    justify-content: space-around;
+}
+.meals{
+    background-color: rgb(219 219 202);
+    height: 300px;
+    border-radius: 35px;
+    margin-top: 1%;
+}
+.meals h1{
+    color: black;
+}
+.meals h2{
+    color: #2e2e2e;
+    margin: 0%;
+}
+.water{
+    background-color: #bfcbd9;
+    width: 45%;
+    margin-top: 2%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.water h1{
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-block-end: auto;
+}
+.water h2{
+    color: #2e2e2e;
+    font-size: larger;
+    max-width: 90%;
+    text-align: justify;
+}
+.activities{
+    background-color: #bfcbd9;
+    width: 45%;
+    margin-top: 2%;
+    border-radius: 25px;
+}
+.activities h1{
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-block-end: auto;
+}
+.activities li{
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #2e2e2e;
+    font-size: larger;
+    font-weight: bold;
+}
+.activities ul{
+    margin-left: 5%;
+}
+.secondary{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(Healthcare.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.secondary h1{
+    color: #436d9d;
+    font-size: 60px;
+    font-family: math;
+}
+.health{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.heart{
+    width: 45%;
+    background-color: #bfcbd9;
+    border-radius: 25px;
+    min-height: 300px;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heart h1{
+    color:black;
+    font-size: 40px;
+    margin-block-end: inherit;
+}
+.heart h2{
+    max-width: 90%;
+}
+.sleep{
+    width: 45%;
+    background-color: #bfcbd9;
+    border-radius: 25px;
+    min-height: 300px;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sleep h1{
+    color:black;
+    font-size: 40px;
+    margin-block-end: inherit;
+}
+.sleep h2{
+    max-width: 90%;
+}
+.consultas{
+    min-width: 100%;
+    background-color: #bfcbd9;
+    border-radius: 25px;
+    min-height: 300px;
+    margin-top: 2%;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+hr{
+    color: #878787;
+    border-style: solid;
+}
