@@ -1,0 +1,112 @@
+css* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rawline', 'Open Sans', 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 440px;
+    border-top: 4px solid #1351b4; /* Azul padrão gov.br */
+}
+
+.gov-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 24px;
+}
+
+.gov-logo span {
+    color: #00cc99; /* Verde detalhe do gov.br */
+}
+
+.login-container h2 {
+    color: #333333;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 24px;
+    line-height: 1.4;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #888888;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333333;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.input-field input:focus {
+    border-color: #1351b4;
+    box-shadow: 0 0 0 2px rgba(19, 81, 180, 0.2);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #1351b4;
+    border: none;
+    border-radius: 20px; /* Botão arredondado do padrão atual */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.login-btn:hover {
+    background-color: #0f4090;
+}
+
+.gov-links {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.gov-links a {
+    color: #1351b4;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.gov-links a:hover {
+    text-decoration: underline;
+}
