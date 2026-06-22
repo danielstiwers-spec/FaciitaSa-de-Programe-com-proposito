@@ -56,3 +56,15 @@ url = "https://api.open-meteo.com/v1/forecast?latitude=-25.42&longitude=-49.27&c
 dados = requests.get(url).json()
 
 print(dados)
+
+import wikipedia
+
+wikipedia.set_lang("pt")
+
+print(wikipedia.summary("Capivara", sentences=3))
+
+from qwikidata.linked_data_interface import get_entity_dict_from_api
+
+entity = get_entity_dict_from_api("Q7378")
+
+print(entity)
