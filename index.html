@@ -16,61 +16,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <link rel="manifest" href="manifest.json">
-    <script defer>
-        // Inline chart initialization moved here to ensure DOM is ready
-        document.addEventListener('DOMContentLoaded', function () {
-            // Ensure canvas elements exist before creating charts
-            function initChart(id, config) {
-                var el = document.getElementById(id);
-                if (!el) {
-                    // create canvas and append to appropriate container
-                    el = document.createElement('canvas');
-                    el.id = id;
-                    var container = document.querySelector('[data-chart="' + id + '"]') || document.body;
-                    container.appendChild(el);
-                }
-                new Chart(el, config);
-            }
-
-            // Meal
-            initChart('mealChart', {
-                type: 'doughnut',
-                data: { labels: ['Proteínas', 'Carboidratos', 'Gorduras'], datasets: [{ data: [40, 45, 15] }] }
-            });
-
-            // Water
-            initChart('waterChart', {
-                type: 'bar',
-                data: { labels: ['08h', '10h', '12h', '14h', '16h', '18h'], datasets: [{ label: 'Copos', data: [1, 2, 2, 1, 2, 1] }] }
-            });
-
-            // Activities
-            initChart('activityChart', {
-                type: 'pie',
-                data: { labels: ['Caminhada', 'Academia', 'Corrida', 'Futebol'], datasets: [{ data: [30, 60, 20, 90] }] }
-            });
-
-            // Heart
-            initChart('heartChart', {
-                type: 'line',
-                data: { labels: ['08h', '10h', '12h', '14h', '16h', '18h'], datasets: [{ label: 'BPM', data: [72, 75, 78, 120, 88, 74], tension: 0.4 }] }
-            });
-
-            // Sleep
-            initChart('sleepChart', {
-                type: 'line',
-                data: {
-                    labels: ['22h', '23h', '00h', '01h', '02h', '03h', '04h'],
-                    datasets: [{ label: 'Qualidade do Sono', data: [70, 78, 75, 82, 88, 85, 90], fill: true, tension: 0.3, backgroundColor: 'rgba(54,162,235,0.2)', borderColor: 'rgba(54,162,235,1)' }]
-                }
-            });
-
-            // Try to register a service worker for app-like behavior
-            if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('/sw.js').catch(() => { });
-            }
-        });
-    </script>
 </head>
 <body>
     <header>
