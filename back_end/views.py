@@ -31,6 +31,12 @@ def user_cadastrado_view(request):
         'initials': initials,
     })
 
+
+def logout_view(request):
+    request.session.flush()
+    return redirect('/login/')
+
+
 def cadastro_usuario(request):
     if request.method == 'POST':
         form = UsuarioForm(request.POST)

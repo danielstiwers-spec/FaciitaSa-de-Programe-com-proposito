@@ -11,7 +11,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #f8f9fa;
-    padding: 20px; /* Garante margem em telas menores */
+    padding: 20px; 
 }
 
 .contact-container {
@@ -20,7 +20,7 @@ body {
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px; /* Um pouco mais largo para acomodar o texto da mensagem */
+    max-width: 500px; 
     border-top: 4px solid #1351b4;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .brand-logo span {
-    color: #00cc99; /* Destaque verde herdado do estilo anterior */
+    color: #00cc99; 
 }
 
 .contact-container h2 {
@@ -74,16 +74,16 @@ body {
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-/* Ajuste específico para o elemento select */
+/* Ajuste para o select */
 .input-field select {
     cursor: pointer;
-    appearance: none; /* Remove seta padrão em alguns navegadores */
+    appearance: none; 
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://w3.org' width='10' height='10' viewBox='0 0 10 10'><path d='M0 3l5 5 5-5z' fill='%23666'/></svg>");
     background-repeat: no-repeat;
     background-position: right 12px center;
 }
 
-/* Impede que o usuário quebre o layout redimensionando de forma errada */
+/* Impede que o usuário quebre o layout */
 .input-field textarea {
     resize: vertical;
     font-family: inherit;
