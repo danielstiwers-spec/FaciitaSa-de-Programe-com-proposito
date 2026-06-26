@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.colorTheme": "GitHub Dark High Contrast",
     "liveServer.settings.port": 5502,
     "chat.tools.terminal.autoApprove": {
         "git add": true
